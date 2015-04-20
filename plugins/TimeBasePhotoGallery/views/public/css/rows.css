@@ -1,18 +1,8 @@
 
-#wrapper{
-  width:1060px;
-  position:relative;
-  margin: 0 auto;
-}
 
  #container{
-  /*min-width:920px;*/
-  width:1000px;
   min-height:760px;
-  margin:0px 20px 0px 20px;
   position:relative;
-  /*height: 900px;*/
-  float:left;
  }
 
  #container.loading{
@@ -21,19 +11,12 @@
   background-repeat:no-repeat;
  }
 
- #header, #footer{
-  width: 980px;
-  margin-left: 20px;
-  margin-right: 20px;
-  background: white;
-  padding: 5px 10px 5px 10px;
-  border: 1px solid #CCC;
-  float:left;
- }
-
  #header{
-  margin-bottom: 4px;
-  margin-top: 20px;
+    background: white;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #CCC;
+    margin-bottom: 4px;
+    margin-top: 20px;
  }
 
  #footer{
@@ -335,19 +318,6 @@ span.term{
   float:left;
   overflow-x:hidden;
   overflow-y:hidden;
-}
-
-
-.button {
-  width: 9px;
-  height: 100px;
-  position: absolute;
-  top: 0px;
-  background: #DDD;
-  color: #444;
-  z-index: 10;
-  margin: 0px 0 0px 0;
-  padding: 80px 3px 0px 3px;
 }
 
 

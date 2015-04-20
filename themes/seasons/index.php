@@ -11,18 +11,7 @@
             <?php endif; ?>
 
         </section>
-        <section class="featured-collection">
-             <div id="wrapper">
-             <?php // timeBasePhotoGallery(); ?>
-            <div id="header">
-              <h1>Exploring the Wyndham Local Studies Image Library <div id="nav">View by: <a href="#title">Title</a> | <a href="#decade" >Decade</a></div></h1>
-            </div>
-            <div id="container" class="loading"></div>
-            <div id="footer"> <a href="index.html">About this project</a> | Images are copyright Wyndham Library, used with permission. </div>
-          </div>
 
-        </section>
-        
         <?php if (get_theme_option('Display Featured Collection') !== '0'): ?>
         <!-- Featured Collection -->
         <div id="featured-collection">
@@ -83,51 +72,18 @@
     </div>
 </div>
 
-<div class="section l-flow-normal">
+<div class="section">
     <div class="l-wrap">
-    <div class="t-content">
-        <ul class="" id="f-links">
+        <section class="featured-collection">
+            <div id="wrapper">
+                <div id="header">
+                    <h1>Exploring the Wyndham Local Studies Image Library <div id="nav">View by: <a href="#title">Title</a> | <a href="#decade" >Decade</a></div></h1>
+                </div>
+                <div id="container" class="loading"></div>
+                <div id="footer"> <a href="index.html">About this project</a> | Images are copyright Wyndham Library, used with permission. </div>
+            </div>
 
-            <li class="c-links c-links--1">
-                <a href="contribution">tell your stories</a>
-            </li>
-            <li class="c-links c-links--2 c-last">
-                <a href="classroom">classroom</a>
-            </li>
-            <li class="c-links c-links--3">
-                <a href="exhibits">Exhibits</a>
-            </li>
-            <li class="c-links c-links--4 c-last">
-                <a href="discover">discover</a>
-            </li>
-        </ul>
-
-        <ul class="" id="f-links-responsive">
-
-            <li>
-                <a href="contribution">tell your stories</a>
-            </li>
-            <li class="c-last">
-                <a href="classroom">classroom</a>
-            </li>
-            <li>
-                <a href="exhibits">Exhibits</a>
-            </li>
-            <li class="c-last">
-                <a href="discover">discover</a>
-            </li>
-        </ul>
-        <div style="clear:both"></div>
-    </div>
-    <div class="clear-responsive"></div>
-    <aside class="t-sidebar">
-        <div class="section section--about">  
-            <?php if (get_theme_option('Homepage Text')): ?>
-            <p><?php echo get_theme_option('Homepage Text'); ?></p>
-            <a href="/neatline/show/truganina-state-school" class="button button--blue">Find out more</a>
-            <?php endif; ?>
-        </div>     
-    </aside>
+        </section>
     </div>
 </div>
 
