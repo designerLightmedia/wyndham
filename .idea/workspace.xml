@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecee2d15-decc-43f4-98b9-cfe14003522f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/seasons/index.php" afterPath="$PROJECT_DIR$/themes/seasons/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/TimeBasePhotoGallery/views/public/css/rows.css" afterPath="$PROJECT_DIR$/plugins/TimeBasePhotoGallery/views/public/css/rows.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/seasons/css/style.css" afterPath="$PROJECT_DIR$/themes/seasons/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,21 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rows.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rows.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/TimeBasePhotoGallery/views/public/css/rows.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.96245307" vertical-offset="4451" max-vertical-offset="5310">
+            <state vertical-scroll-proportion="-28.481482" vertical-offset="4451" max-vertical-offset="5310">
               <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/seasons/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.481482" vertical-offset="74093" max-vertical-offset="74940">
-              <caret line="4980" column="28" selection-start-line="4980" selection-start-column="28" selection-end-line="4980" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.980916" vertical-offset="74109" max-vertical-offset="74970">
+              <caret line="4992" column="0" selection-start-line="4992" selection-start-column="0" selection-end-line="4992" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,8 +111,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/themes/seasons/index.php" />
-        <option value="$PROJECT_DIR$/themes/seasons/css/style.css" />
         <option value="$PROJECT_DIR$/plugins/TimeBasePhotoGallery/views/public/css/rows.css" />
+        <option value="$PROJECT_DIR$/themes/seasons/css/style.css" />
       </list>
     </option>
   </component>
@@ -691,18 +688,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/seasons/css/style.css">
+    <entry file="file://$PROJECT_DIR$/plugins/TimeBasePhotoGallery/views/public/css/rows.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.481482" vertical-offset="74093" max-vertical-offset="74940">
-          <caret line="4980" column="28" selection-start-line="4980" selection-start-column="28" selection-end-line="4980" selection-end-column="28" />
+        <state vertical-scroll-proportion="-28.481482" vertical-offset="4451" max-vertical-offset="5310">
+          <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/TimeBasePhotoGallery/views/public/css/rows.css">
+    <entry file="file://$PROJECT_DIR$/themes/seasons/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96245307" vertical-offset="4451" max-vertical-offset="5310">
-          <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.980916" vertical-offset="74109" max-vertical-offset="74970">
+          <caret line="4992" column="0" selection-start-line="4992" selection-start-column="0" selection-end-line="4992" selection-end-column="0" />
           <folding />
         </state>
       </provider>
