@@ -4937,3 +4937,54 @@ div#comments-container::after {
 .toggle-actions.open #toggle-action-open{
     display: none;
 }
+
+
+.image-library-nav {
+    float: right;
+}
+.image-library-nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 5px 5px;
+}
+.image-library-heading:after {
+    clear: both;
+    display: table;
+    content: '';
+}
+.image-library-heading  {
+    background: white;
+    padding: 8px 14px;
+    border: 1px solid #CCC;
+    margin-top: 20px;
+}
+
+.image-library-title{
+    float: left;
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    position: relative;
+}
+.image-library-heading .button {
+    font-size: 14px;
+    padding: 8px 14px;
+    text-transform: uppercase;
+}
+
+.image-library-body {
+    position:relative;
+    min-height:760px;
+    background-color: rgba(187, 177, 155, 0.25);
+}
+
+.image-library-body.loading{
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.image-library-footer{
+    margin-bottom: 20px;
+    margin-top: 4px;
+    font-size: 14px;
+}

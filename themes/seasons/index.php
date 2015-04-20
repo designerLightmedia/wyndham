@@ -74,13 +74,16 @@
 
 <div class="section">
     <div class="l-wrap">
-        <section class="featured-collection">
+        <section class="image-library">
             <div id="wrapper">
-                <div id="header">
-                    <h1>Exploring the Wyndham Local Studies Image Library <div id="nav">View by: <a href="#title">Title</a> | <a href="#decade" >Decade</a></div></h1>
+                <div class="image-library-heading" id="header">
+                    <h2 class="image-library-title">Exploring the Wyndham Local Studies Image Library</h2>
+                    <div class="image-library-nav" id="nav">
+                        View by: <a class="" href="#title">Title</a> <span>|</span> <a href="#decade" >Decade</a>
+                    </div>
                 </div>
-                <div id="container" class="loading"></div>
-                <div id="footer"> <a href="index.html">About this project</a> | Images are copyright Wyndham Library, used with permission. </div>
+                <div class="image-library-body loading" id="container"></div>
+                <div class="image-library-footer" id="footer"> <a href="index.html">About this project</a> | Images are copyright Wyndham Library, used with permission. </div>
             </div>
 
         </section>
