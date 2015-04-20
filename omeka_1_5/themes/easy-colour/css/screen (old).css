@@ -1,0 +1,204 @@
+/* == Reset == */
+@import url("reset.css");
+
+/* == Generic styles ======== */
+body {font:62.5% "Helvetica Neue", "Helvetica", "Arial", Times, serif; color:#1F2109; min-width:940px;}
+
+h1 {margin:5px 0 0 15px;}
+h1 {font-size:3em; margin-bottom:0.666667em; line-height:1.333333em;}
+h2 {font-size:2em; margin-bottom:.25em; line-height:1em;}
+h3 {font-size:2em; margin-bottom:.25em; line-height:1em;}
+
+/* Links */
+a:link {color:#1F2109;}
+a:visited {color:#1F2109;}
+a:hover {color:#777;}
+a:active {color:#777;}
+
+h3 a {text-decoration:none;}
+
+/* Microformats */
+.hTagcloud {margin: 6em 3em 5em 3em;}
+.hTagcloud ul {list-style:none; margin-left:0; padding-left:0; line-height:1.8em;}
+	.hTagcloud li {display:inline;margin-right:25px;}
+        .hTagcloud li a {text-decoration: underline;}
+
+	.popular {font-size:100%;}
+	.v-popular {font-size:140%;}
+	.vv-popular {font-size:180%;}
+	.vvv-popular {font-size:220%;}
+	.vvvv-popular {font-size:260%;}
+	.vvvvv-popular {font-size:300%;}
+	.vvvvvv-popular {font-size:320%;}
+	.vvvvvvv-popular {font-size:340%;}
+	.vvvvvvvv-popular {font-size:360%;}
+
+	.popular a, .popular a:visited {color: #1F2109;}
+	.v-popular a, .v-popular a:visited {color: #1F2109;}
+	.vv-popular a, .vv-popular a:visited {color: #1F2109;}
+	.vvv-popular a, .vvv-popular a:visited {color: #1F2109;}
+	.vvvv-popular a, .vvvv-popular a:visited {color: #1F2109;}
+	.vvvvv-popular a, .vvvvv-popular a:visited {color: #1F2109;}
+	.vvvvvv-popular a, .vvvvvv-popular a:visited {color: #1F2109;}
+	.vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: #1F2109;}
+	.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #1F2109;}
+
+/* == Header == */
+
+#header {background: #ffbe40; border: 1px solid #fff; min-height: 15em; padding: 0 1em 0 1em; margin: 5em 0 0 0;}
+
+        /* == Coloured Inner-bar across the top == */
+        #branding {background: #ffa900; border-left: 1px solid #fff; border-right: 1px solid #fff; width: 900px; margin-left: auto; margin-right: auto; min-height: 15em;}
+        
+        /* == Linked Main Title == */
+        #site-title {font-size: 6em; padding: 20px 0 0 50px;}
+        #site-title a {color: #fff; text-decoration: none;}
+        
+        /* == Search Box == */
+        
+        #header #branding #search-wrap {float: right; margin: 5px 5px 0 0;}
+        #header #branding #search-wrap a {font-size: 1em; color: #fff; margin-top: .25em; text-decoration: none;}
+        
+        /* == Top Navigation == */
+        #header #branding ul {float: right; width:578px; padding:0 15px 0 60px; text-align:right; color: #000;}
+        #header #branding ul li {margin-left: 12px; }
+        
+/* == Content == */
+#content {background:#ffcf73;}
+
+	#primary-index {background: #fff url("../images/splash.jpg"); width: 900px; margin-left: auto; margin-right: auto; min-height: 600px;} 
+        #primary-items {background: #fff; width: 900px; min-height: 300px; margin-left: auto; margin-right: auto; padding: 15px 0 0 0;}
+        #primary {background: #fff; width: 830px; min-height: 300px; margin-left: auto; margin-right: auto; padding: 15px 35px 0 35px;}
+        #primary h2, h1{margin: 0 0 .25em 0;}
+        #primary-items h1, h2{margin: 0 0 0 35px;}
+
+        /* == Splash Page buttons == */
+            
+            #buttons {font-size: 1.8em;}
+            #buttons a {text-decoration: none; display: block; color: #fff; border: 3px solid #fff; }
+            #buttons a:hover{border: 3px solid #000;}
+            
+            /* To disable or change the text on a button, alter "index.php" To change the background image, alter "/images/splash.jpg" */
+            .button1 {display: block; width: 300px; float: left;}
+                .button1 a {min-height: 42px; margin: 3px 0 0 3px; padding: 150px 0 0 170px;}
+            .button2 {display: block; width: 600px; float: right;}
+                .button2 a {min-height: 162px; margin: 3px 3px 0 0; padding: 30px 0 0 80px;}
+            .button3 {display: block; width: 300px; float: left;}
+                .button3 a {min-height: 262px; margin: 0 0 3px 3px; padding: 130px 0 0 80px;}
+            .button4 {display: block; width: 300px; float: left;}
+                .button4 a {min-height: 155px; padding: 40px 0 0 85px;}
+            .button5 {display: block; width: 300px; float: right;}
+                .button5 a {min-height: 94px; margin: 197px 3px 3px 0; padding: 100px 0 0 20px;}
+                
+        /* == Navigation for Browsing / Item Pages == */        
+                
+            .secondary-left {float: left; width: 33%; height: 200px; border: 1px solid #b9f9b9;}
+            .secondary-centre {float: left; width: 33%; height: 200px; margin: auto; border: 1px dotted #f01f01; padding: 50px 50px 50px 50px;}
+            .secondary-right {float: right; width: 33%; height: 200px; border: 1px dashed #000;}
+
+            #secondary-nav {margin-bottom:1em; border-bottom:1px solid #ccc;margin-bottom:0;padding:0.4em 0.5em; font-size:1.5em; }
+            #secondary-nav li {padding:0.5em 0;}
+            #secondary-nav a {padding:0.5em 1em 0.5em; color:#666;}
+            #secondary-nav .current a{border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+            
+            .pagination ul {text-align: right; line-height: 1em; padding: 0.5em;}
+            .pagination li {display: inline; padding: 0 0.5em 0 0.5em;}
+
+        /* == Individual Items == */
+            .item-entry {width: 227px; min-height: 40em; overflow: hidden; float: left; display: block; padding: 20px 38px 5px 35px;}
+            .item-entry .item-img img {margin-bottom:2em; padding: 6px; border:1px solid #ccc;}
+            .item-img-solo {margin-bottom:2em; padding: 6px; border: 1px solid #ccc; float: right;}
+            
+            .browse .item {overflow:hidden; border-top:1px solid #ccc;padding-top:2em;}
+            .tags li {display:inline;}
+            .tags a {text-decoration: none; font-size: 1.2em;}
+	
+        /* == Error Pages == */
+            .error-img {display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px; padding: 6px; border: 1px solid #ccc;}
+            .error-txt {display: block; margin-left: auto; margin-right: auto; padding-bottom: 3em; width:66%}
+            .error-photo-credit {clear: both; overflow: hidden; float: right; font-size: 0.8em; color: #ccc; padding: 0 15px 2em 0;}
+    
+        /* == == */
+            #item-content img {padding:5px; border:1px solid #ccc; margin-bottom:2em;}
+
+            #featured-item {overflow:hidden;}
+            #featured-item img {width: 140px; height:140px; padding:8px; border:1px solid #ccc; margin-right:20px; margin-bottom:20px;float:left;}
+
+            .items-list li {border-bottom:1px solid #ccc; margin-bottom:1.33333em;}
+            
+            .collection {border-top:1px solid #ccc;padding-top:1.33333em; padding-bottom: 5px;}
+            .collection .element {margin-bottom:0; padding-top: 15px;}
+            #collection-description {padding: 15px 0 0 0; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;}
+		
+	/* Exhibits browse */
+	    #exhibits .exhibit {border-top:1px solid #ccc; padding-top:2em;}
+		
+            .exhibit-section-nav {list-style:square;padding-left:20px;padding-bottom:10px;}
+            .exhibit-section-nav li {font-size:1.5em;}
+            .exhibit-page-nav {list-style:square;padding-left:40px;padding-bottom:10px;}
+            .exhibit-page-nav li {font-size:1.5em;} 
+
+/* == Footer == */
+#footer {clear:both; overflow:hidden; background:#FFB117; min-height: 5em;}
+	#branding-footer {background: #ff7100; width: 900px; margin-left: auto; margin-right: auto; min-height: 8em;  border-left: solid 1px #fff; border-right: solid 1px #fff;}
+        #footer #branding-footer p {clear: both; overflow: hidden; float: right; font-size: 0.8em; color: #fff; padding: 0 15px 0;}
+        #footer #branding-footer a {color: #fff; text-decoration: none;}
+	#footer #branding-footer ul {float:right; width:578px; margin:0 0 1em 60px; text-align:right; padding: 0 15px 0 0;}
+		#footer #branding-footer ul li {margin-left:12px;}	
+
+/* Reusable classes */
+.hide {text-indent: -1000em; width: 0; height: 0; overflow: hidden;}
+
+.navigation {list-style:none; margin: 2em 0 0;}
+	.navigation li {display:inline;}
+	.navigation a {text-decoration:none; color: #fff;}
+        #header #footer .navigation li {font-size:1.5em;}
+
+.item-pagination {overflow:hidden;width:830px;border-top:1px solid #ccc; padding:1.5em 0 1.5em 0;}
+.item-pagination li.previous {display:block;float:left; width:48%;}
+.item-pagination li.next {float:right; display:block;width: 48%; text-align:right;}
+.item-pagination li a{color: #000; margin: 0 0 15px 0;}
+
+.indent {padding: 0 35px 0 35px;}
+.indent-large {padding: 0 35px 0 70px;}
+textarea {width:378px; height:312px;float:right;}
+legend {display:none;}
+fieldset {display:block; clear:both;}
+label {font-size:1.5em;}
+.label {font-size:1.5em;}
+.inputs {overflow:hidden;zoom:1;}
+.field {border-bottom:1px solid #ccc; padding:0.75em 0; overflow:hidden; width:512px;}
+.field label {float:left; width: 114px;font-weight:normal;clear:left; }
+.field .label {float:left; width: 114px;font-weight:normal;clear:left; }
+.field .textinput, .field select {float:right; width: 378px;background:#fff;}
+.field select {width: 382px;}
+.field input {margin:0;margin-left:16px;}
+input.submitinput {margin-top:1em;}
+.radioinputs {display:block; margin-bottom:0.5em; overflow:hidden;}
+.radioinputs label {display:block; float:left; width: 48%; clear:none;}
+input#description {width: 378px; height: 312px;}
+.search-entry select {margin-bottom:.5em;}
+#primary #submit_search {margin:.5em 0;float:right;}
+
+
+p {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;}
+
+ul {list-style:none;font-size:1.5em; line-height:1.33333em;}
+ol {list-style:lower-roman inside;font-size:1.5em; line-height:1.33333em;}
+
+ul.items-list, ul.collections-list, ul.title-list {font-size:1em;}
+
+
+.item-description, .element-text, .element-text-empty {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;}
+.item-description p, .element-text p {font-size:1em; line-height:1.33333em; margin-bottom:1.33333em;}
+
+.title-list li {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;}
+	
+em {font-style:italic;}
+.element {margin-bottom:1.25em;}
+
+textarea#rights {float:none; display:none;line-height:1.33333em;width: 512px; border:none; font:1.5em "Times New Roman",Times, serif;height:31em; color:#444;padding:0; margin:0;}
+
+div.error {font-size:1.5em; line-height:1.33333em; margin:1.33333em 0;}
+
+

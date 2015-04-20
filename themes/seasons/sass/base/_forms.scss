@@ -1,0 +1,189 @@
+@mixin forms {
+    
+$_input-bg:                     #f4efe6;
+$_input-border:                 #ccc4b2;
+$_input-shadow-inner:           $bw_1;
+
+$_placeholder-text:             $bw_1;
+
+$_focus-bg:                     #f7f5f2;
+$_focus-border:                 rgba($blue, .5);
+$_focus-shadow-outer:           rgba($blue, .3);
+
+$_disabled-bg:                  $bw_1;
+$_disabled-border:              $bw_1;
+
+/* Forms
+   ========================================================================== */
+
+// Core styling for text-like inputs & selects
+//
+// You can opt for a default 100% or something fixed depending on your design
+// Don't use input[type="button"] or other variants, use the <button> element!
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea,
+select {
+    display: inline-block;
+    @include box-sizing(border-box);
+
+    // Btw: In IE7, the height of the select element cannot be changed by height, only font-size
+    height: 34px;
+    padding: 4px 6px;
+
+    border: 1px solid $_input-border;
+    @include border-radius(2px);
+
+    background-color: $_input-bg;
+    @include box-shadow(rgba(#fff, .8) 0 1px 0);
+    line-height: (24/16);
+
+    @include transition(
+        border-color .3s linear,
+        box-shadow .3s linear,
+        background-color .5s linear
+    );
+}
+
+// Width needs to be declared on all inputs since the specificity would be too big with type selectors
+input,
+textarea,
+select {
+    width: 100%;
+}
+
+// Reset width of input images, buttons, radios, checkboxes. Yawn.
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+
+// Make textarea height behave, allow only vertical resize
+textarea {
+    height: auto;
+    resize: vertical; 
+}
+
+// Placeholder text
+input,
+textarea {
+    @include placeholder {
+        color: $_placeholder-text;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 4px 0;
+    *margin-top: 0; // IE7
+    margin-top: 1px \9; /* IE8-9 */
+    line-height: normal;
+    cursor: pointer;
+}
+
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+    height: auto;
+}
+
+input[type="file"] {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+// FOCUS STATES
+// ------------
+ 
+input:focus,
+textarea:focus {
+    border-color: $_focus-border;
+    outline: 0;
+    outline: thin dotted \9; // IE6-9
+    background: $_focus-bg;
+    @include box-shadow(
+        $_focus-shadow-outer 0 0 4px
+    );
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+select:focus {
+    @include default-focus();
+}
+
+
+
+// DISABLED STATE
+// --------------
+
+// Disabled and read-only inputs
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+    cursor: not-allowed;
+    background-color: $_disabled-bg;
+    border-color: $_disabled-border;
+}
+
+// Explicitly reset the colors here
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][readonly],
+input[type="checkbox"][readonly] {
+    background-color: transparent;
+}
+
+
+// HTML5 INVALID STATES
+//---------------------
+ 
+input:focus:required:invalid,
+textarea:focus:required:invalid,
+select:focus:required:invalid {
+    color: $_error-text;
+    border-color: $_error-border;
+    
+    &:focus {
+        border-color: $_error-border;
+        @include box-shadow($_error-border);
+    }
+}
+
+
+// LABELS
+// -----------
+
+label {
+    display: inline;
+}
+
+// LEGEND
+// ------
+
+}

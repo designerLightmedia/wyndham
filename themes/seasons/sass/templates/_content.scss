@@ -1,0 +1,35 @@
+@mixin t-content {
+
+/* Template - Content
+   ========================================================================== */
+
+.t-content {
+    float: right;
+    @include box-sizing(border-box);
+    //max-width: 100%; // without this images will break the parent max-width 100% in FF 15
+    @include span-columns(8, 12);
+    @include omega;
+}
+
+.t-content__title {    
+    margin: 0 0 .5em 0;
+    color: $blue;
+    font-weight: 100;
+}
+
+.t-flow--left {
+    float: left;
+}
+
+.t-flow--right {
+    float: right;
+}
+
+.title-desc {
+    margin-top: 4px;
+    display: block;
+}
+
+}
+
+

@@ -1,0 +1,13 @@
+source "http://rubygems.org"
+
+gem "listen"
+gem "colorize"
+
+gem "sass"
+gem "sass-globbing"
+gem "compass"
+gem "susy"
+gem "rb-fsevent"
+
+
+gem "guard-livereload", "~> 1.1.3"

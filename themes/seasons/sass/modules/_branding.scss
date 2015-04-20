@@ -1,0 +1,47 @@
+
+$_branding-text:            #fff;   
+$_branding-sub-text:        #bbb;
+$_branding-sub-text2:       #757575;
+$_branding-small-text:      #000;   
+
+////////////////////////////////////////////////////////////////////////////////
+/* =============================== Branding styles ========== */
+
+.branding {    
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 308px;
+        height: 213px;
+        background: image-url('logo-bg.png') 0 -244px no-repeat;
+        //@include transition(.4s);
+        
+        display: block;
+        img {
+            display: block;
+            margin: auto;
+            margin-top: 2.5em;
+        }
+        
+        &:hover {
+            background-position: 0 top;
+        }
+    }
+
+}
+
+
+.branding--small {
+    float: none;    
+}
+
+.branding--footer {
+    display: block;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: -42px;
+    margin-bottom: 20px;
+}

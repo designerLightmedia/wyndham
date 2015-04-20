@@ -1,0 +1,35 @@
+@mixin respond($min: false, $max: false, $ignoreIE: false) {
+
+    @if (not $min) and (not $max) {
+        @warn "Either $min or $max must be specified.";
+    }
+
+    @if $min and $max {
+
+        // Both $min and $max
+        @media (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+
+    } @else {
+        @if $min {
+            // Min only:
+            @media (min-width: $min) {
+                @content;
+            }
+        } @else {
+            // Max only:
+            @media (max-width: $max) {
+                @content;
+            }
+        }
+    }
+}
+
+$retina-pixel-ratio: 2 !default;
+
+@mixin retina ($ratio: $retina-pixel-ratio) {
+    @media (-webkit-min-device-pixel-ratio: $ratio), (min-resolution: $ratio * 96dpi) {
+        @content;
+    }
+}

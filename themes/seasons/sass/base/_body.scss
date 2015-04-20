@@ -1,0 +1,15 @@
+@mixin body {
+
+/* Body
+   ========================================================================== */
+
+body {
+    margin: 0;
+    background: image-url('bg-main.jpg') 0 0 repeat;
+}
+
+img {
+	max-width: 100%;
+}
+
+}

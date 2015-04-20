@@ -1,0 +1,59 @@
+body {
+	font-family: "Helvetica", "Arial", sans-serif;
+	}
+
+h1 {
+	font-size: 24px;
+	line-height: 24px;
+	}
+	
+h2 {
+	font-size: 18px;
+	line-height: 18px;
+	}
+	
+h3 {
+	font-size: 12px;
+	line-height: 18px;
+	}
+	
+p, li, .element-text {
+	font-size: 12px;
+	line-height: 18px;
+	}
+	
+#primary-nav, #search-wrap, .navigation, #secondary-nav, #secondary-nav-top, #secondary-nav-bottom, #section-nav, .pagination {
+	display: none;
+	}
+	
+.item-file img {
+	width: 100px;
+	float: left;
+	margin: 0 10px 10px 0;
+	}
+	
+.item-img img {
+	width: 100px;
+	}
+	
+#site-title a {
+	font-size: 21px;
+	font-weight: bold;
+	}
+	
+#featured-item img {
+	width: 400px;
+	}
+	
+.crop {
+	height: 240px;
+	overflow: hidden;
+	}
+	
+	.crop img {
+		margin-top: -15% !important;
+		}
+	
+#footer {
+	clear: both;
+	}

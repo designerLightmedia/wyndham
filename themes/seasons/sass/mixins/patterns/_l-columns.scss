@@ -1,0 +1,64 @@
+@mixin l-columns {
+
+.l-columns-1 {
+	@include span-columns(1, 12);
+}
+
+.l-columns-2 {
+	@include span-columns(2, 12);
+}
+
+.l-columns-3 {
+	@include span-columns(3, 12);
+}
+
+.l-columns-4 {
+	@include span-columns(4, 12);
+}
+
+.l-columns-5 {
+	@include span-columns(5, 12);
+}
+
+.l-columns-6 {
+	@include span-columns(6, 12);
+}
+
+.l-columns-7 {
+	@include span-columns(7, 12);
+}
+
+.l-columns-8 {
+	@include span-columns(8, 12);
+}
+
+.l-columns-9 {
+	@include span-columns(9, 12);
+}
+
+.l-columns-10 {
+	@include span-columns(10, 12);
+}
+
+.l-columns-11 {
+	@include span-columns(11, 12);
+}
+
+.l-columns-12 {
+	@include span-columns(12, 12);
+}
+
+.omega {
+	@include omega;
+}
+
+.l-columns-remove-omega {
+	@include remove-omega;
+}
+
+.l-columns-reset {
+	@include reset-columns;
+}
+
+
+}

@@ -1,0 +1,310 @@
+@media screen {
+    /* == Imports == */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	outline: 0;
+    	font-weight: inherit;
+    	font-style: inherit;
+    	font-family: inherit;
+    	vertical-align: baseline;
+    }
+    /* remember to define focus styles! */
+    :focus, :active {
+    	outline: 0;
+    }
+    body {
+    	line-height: 1;
+    	color: black;
+    	background: white;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    /* tables still need 'cellspacing="0"' in the markup */
+    table {
+    	border-collapse: separate;
+    	border-spacing: 0;
+    }
+    caption, th, td {
+    	text-align: left;
+    	font-weight: normal;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: "";
+    }
+    blockquote, q {
+    	quotes: "" "";
+    }
+    /* == Generic styles ======== */
+    body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#333;}
+
+    	/* -- Headings -- */
+    	h1 {font-size:3em; line-height:1.333333em;color:#999;}
+    	h2 {font-size:2.2em; line-height:1.333333em;color:#999;}
+    	    h2 a {text-decoration:none;font-style:italic;}
+    	h3 {font-size:1.9em; line-height:1em;color:#999;}
+    	    h3 a {text-decoration:none;font-style:italic;}
+    	h4 {}
+    	h5 {}
+    	h6 {}
+	
+    	#home h2 {font-size:3em; line-height:1.333333em;color:#999;}
+
+    	/* -- Misc Block elements -- */
+    	p, ul, ol {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
+    	ol {list-style:decimal inside;}
+    	li {font-size:1em;}
+	
+    	/* -- Misc Inline elements -- */
+    	em {font-style:italic;}
+    	strong {font-weight:bold;}
+    	label {font-size:1.5em;}
+
+    	/* -- Links -- */
+    	a:link {color:#999;}
+    	a:visited {color:#999;}
+    	a:hover {color:#777;}
+    	a:active {color:#777;}
+
+    	/* -- Misc Classes -- */
+
+    		/* Navigation Classes*/
+    		.navigation {list-style:none; margin: 2em 0 0;}
+    		.navigation li {display:inline;}
+
+    		/* Pagination Classes */
+    		.item-pagination {float:right;margin:10px 0 10px 0;}
+    		.item-pagination li.next {margin-left:20px;}
+		
+    		.pagination ul {text-align:right; line-height:1em; padding:0.5em; }
+    		.pagination li {display:inline; margin-left:1em; margin-bottom:0; padding:0.5em 0;}
+		
+
+    		.pagination .next {border-left:1px solid #ccc; padding-left:1em;}
+    		.pagination .previous {border-right:1px solid #ccc; padding-right:1em;}
+		
+    		/* Items Classes */
+    		.element-text {font-size:1.5em; line-height:1.33333em;color:#ddd;margin:7px 0 7px 0;}
+    		.element-text-empty {font-size:1.5em; line-height:1.33333em;color:#ddd;margin:7px 0 7px 0;}
+    		.element-text a {color:#ddd;margin:7px 0 7px 0;}
+    		.element-text p {margin-bottom:0;font-size:1em;}
+    		.element-text ul {margin-bottom:0;font-size:1em;}
+		
+    		.item-image img {padding:5px; border:2px solid #444; margin-bottom:2em;}
+		
+    		.item-meta {overflow:hidden;}
+		
+    		.browse .item, #collections .item{overflow:hidden;padding-top:2em;border-bottom:2px solid #444;}
+    		.browse .item-img img, #collections .item-img img {width:100px; height:100px; float:left; display:block; margin-bottom:10px; margin-right:20px; margin-top:4px; padding:6px; border:1px solid #ccc;}
+    		.browse .item p, #collections .item p {margin-top:6px;margin-bottom:6px;}
+		
+    		/* Tags Classes */
+    		.tags li {display:inline;}
+    		ul.tags {margin:0;}
+
+    		/* Tag Clouds */
+    		.hTagcloud {margin-top:2em;}
+    		.hTagcloud ul {list-style:none; margin-left:0; padding-left:0; line-height:1.8em;}
+    			.hTagcloud li {display:inline;margin-right:8px;}
+
+    			.popular {font-size:100%;}
+    			.v-popular {font-size:140%;}
+    			.vv-popular {font-size:180%;}
+    			.vvv-popular {font-size:220%;}
+    			.vvvv-popular {font-size:260%;}
+    			.vvvvv-popular {font-size:300%;}
+    			.vvvvvv-popular {font-size:320%;}
+    			.vvvvvvv-popular {font-size:340%;}
+    			.vvvvvvvv-popular {font-size:360%;}
+
+    /* == Header == */
+    #header {height:12em;width:860px; }
+    #search-container {float:right;padding-top:20px;margin:0;}
+    #search-container #search {margin-right:5px;}
+    #search-container #submit_search {background:#888;}
+    #search-container #submit_search:hover {background:#777;}
+    #search-container a {float:right;font-size:1.5em;margin-top:5px;text-decoration:none;color:#888;padding:1px 5px;}
+    #search-container a:hover {color:#777;}
+
+    #site-title {font-size:3.5em; padding:20px 0 0 20px; line-height:1.333333em;color:#fff;}
+    #site-title img {}
+    #site-title a {text-decoration:none;}
+
+    /* == Content == */
+
+    	/* -- Structure -- */
+    	#content {padding:25px 20px 0 20px; overflow:hidden;clear:both;background-color:#222; }
+    		#primary {float:left; width: 824px; }
+		
+    		/* -- Navigation -- */
+    		#primary-nav {background-color:#888;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
+    		#primary-nav ul {width:864px;margin:0;font-size:2em; line-height:1.4em;text-align:right;}
+    		#primary-nav li {display:inline;}
+    		#primary-nav a {text-decoration:none;color:#333;padding:.2em .5em;}
+    		#primary-nav a:hover {background-color:#ccc;}
+    		#primary-nav li.current a {background-color:#fff;}
+    		#primary-nav li.nav-about a {padding-right:.5em;}
+
+    		#secondary-nav {margin-bottom:1em;padding:0.5em 0;border-bottom:2px solid #ccc;}
+    		#secondary-nav a {padding:0.5em 1em 0.6em; color:#999;text-decoration:none;}
+    		#secondary-nav a:hover {color:#777;}
+    		#secondary-nav .current a{background:#fff;color:#333; }
+
+    		/* -- Pagination -- */
+    		#pagination-top ul {border-bottom:1px solid #ccc;margin:0;}
+    		#pagination-bottom ul {margin-bottom:0;border-top:2px solid #ccc;}
+		
+    /* == Home Page == */
+        #homepage-text {width: 835px; font-size: 1.122em;}
+        #featured-item {width: 525px; margin-top:1em;margin-bottom:2em; float:left; }
+        #featured-item h3 {clear:both;font-size:1.8em; margin-bottom:1em; line-height:1em;padding-top:10px;}
+        #featured-item img {width: 500px; padding:8px;border:2px solid #444;float:left;margin-bottom:2px;}
+    
+        .item-description {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
+        .item-description p {font-size:1em;}
+
+        #recent-items {margin: 1em 1em; overflow:hidden; width: 248px; float: right; }
+        #recent-items h3 {font-style:italic;margin-bottom:5px;padding:0 3px;}
+        #recent-items .item {display:block;float:left;width:258px;height:auto;overflow:hidden;margin-right:2px;}
+        #recent-items img {display:block;padding:5px;border:1px solid #444; margin-bottom: 10px; width: 233px;}
+        #recent-items .item-title {display:block;margin-top:10px;}
+        #recent-items .item-description {padding:0 3px;}
+        #recent-items .item-description a.show {margin-left:5px;}
+        #recent-items .view-items-link, #collections .show .view-items-link {float:left;margin:3px 5px;}
+		.featured-box{clear: left; border-top:2px solid #444;  width: 520px; padding: 10px 0px; margin: 0px;}
+    /* == Items Pages ==*/
+    	#item-files img {padding:5px; border:1px solid #444;}
+	
+	
+    	/* Advanced Search */
+        textarea {width:378px; float:right;}
+        legend {display:none;}
+        fieldset {display:block; clear:both;}
+        label {font-size:1.5em;color:#ddd;}
+        .label {font-size:1.5em;color:#ddd;}
+        .inputs {overflow:hidden;zoom:1;}
+        .field {border-bottom:2px solid #444; padding:0.75em 0; overflow:hidden; width:512px;}
+        .field label {float:left; width: 114px;font-weight:normal;clear:left; }
+        .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
+        .field .textinput, .field select {float:right; width: 378px;background:#fff;}
+        .field select {width: 382px;}
+        .field input {margin:0;margin-left:16px;}
+        input.submitinput {margin-top:1em;}
+        .radioinputs {display:block; margin-bottom:0.5em; overflow:hidden;}
+        .radioinputs label {display:block; float:left; width: 48%; clear:none;}
+        input#description {width: 378px; height: 312px;}
+        .search-entry select {margin-bottom:.5em;}
+        #submit_search_advanced {margin:.5em 0 1em 455px;}
+	
+    	.no-results {margin:10px;}
+    	#advanced_search_header {font-size:1.4em;}
+    	#primary #basic_search_header {font-size:1.4em;}
+
+    /* == Exhibits Pages */
+    	.exhibit {margin:10px 0 10px 0;}
+        #exhibit #primary #nav-container {width: 850px; padding-top: 5px;}
+    	#exhibits p {margin:3px 0 3px;}
+	    #exhibit-sections {margin-bottom: 40px; line-height: 1.33em;}
+	    #exhibit-sections h3 {line-height: 1.44em;}
+    	#exhibit-show {clear:both;}
+        #exhibit.show h2 {clear:both;}
+    
+    	.exhibit-section-nav ul{list-style:none; margin:2em 0 0; color:#fff; clear:both;}
+    	.exhibit-section-nav li {display:inline;zoom:1;}
+    	.exhibit-section-nav a {padding:0.11em 1em 0.44em; color:#fff;text-decoration:none;zoom:1;}
+    	.exhibit-section-nav a:hover {color:#ccc;}
+    	.exhibit-section-nav .current a{padding: .44em .44em .40em .44em; border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+    	.exhibit-section-nav a.current {border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+
+    	#exhibit-page-navigation {clear:both;margin-top:0.4em; margin-bottom: 20px; }
+    	ul.exhibit-page-nav {float:left;margin:0 0.5em; width: 840px;}
+    	.exhibit-page-nav li {display:inline; margin-left:1em;zoom:1;}
+    	#exhibit-page-navigation a {padding:0.5em 1em 0.5em 1em; color:#999;text-decoration:none;zoom:1;font-size:1.119em;}
+    	#exhibit-page-navigation a:hover {background:#fff;color:#333;}
+    	.exhibit-text {clear:both;}
+    	.exhibit-item .exhibit-title{clear:both;}
+    	.exhibit-text ul, ol {list-style: disc; margin: 1em 4em; padding:0; }
+        .image-text-group {clear:both;}
+    	#exhibit-summary {margin-top:2em;}
+	
+	
+    /* == Collections Pages == */
+
+    	#collections .field {border:none;}
+    	.collection {border-bottom:2px solid #444; margin-top:7px; }
+	
+    	#collections .show h3 {line-height:1.333em;}
+
+	    /* == Simple Pages == */
+	ul.simple-pages-navigation li{font-size: 133%; margin: 0px 0px 10px 0px;}
+	ul.simple-pages-navigation ul {font-size: 66%; margin: 10px 0px 0px 0px; line-height: .33em;}
+	ul.simple-pages-navigation ul a {text-decoration: none;}
+	.page #primary {width: 700px; margin-right: 18px; }	
+	
+	
+    /* == Footer == */
+    #footer-container {height:200px; border-top:2px solid #ccc;}
+    #footer {clear:both; overflow:hidden; margin-left:0px;width: 860px;padding-bottom:20px;}
+    	#footer p {clear:both;text-align:right;padding:10px 0 0;}
+        #footer-text {margin-top:40px; margin-left: 20px; font-size: .899em; }
+    	#footer ul {float:left; width:860px;text-align:right;margin-top:10px;}
+    		#footer ul li {margin-left:12px;}
+}
+@media print {
+    body{
+    	font:12px Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif;
+    }
+    #content{
+    	width:100%;
+    	margin:0;
+    	float:none;
+    }
+    h1,
+    #site-title{
+    	font-size:16pt;
+    	font-weight:bold;
+    }
+    h2{
+    	font-size:14pt;
+    	font-style:italic;
+    }
+    h3 {
+    	font-size:14pt;
+    }
+    h4 {
+    	font-weight:bold;
+    }
+    h5 {
+    	font-weight:bold;
+    	font-style:italic;
+    	text-transform:uppercase;
+    }
+    a:link:after {
+    	content: " (" attr(href) ") ";
+    	font-size:80%;
+    }
+    #search-container,
+    #primary-nav,
+    #header-image,
+    .navigation,
+    .pagination,
+    #exhibit-page-navigation,
+    .exhibit-section-nav,
+    .exhibit-page-nav {
+    	display:none;
+    }
+    blockquote {
+    	margin:10pt 0 0 0;
+    	font-style:italic;
+    }
+}

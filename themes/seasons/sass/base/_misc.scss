@@ -1,0 +1,96 @@
+@mixin misc {
+
+.t-left {
+	float: left;
+}
+
+.t-right {
+	float: right;
+}
+
+
+// WordPress WYSIWYG Editor Styles
+// ---------------------------------
+
+.size-full {
+    width: 100%;
+}
+
+.size-large {}
+
+.size-medium {
+    width: 40%;
+}
+
+.size-thumbnail {}
+
+.entry-content img {
+    margin: 0 0 1.5em 0;
+}
+
+.alignleft, img.alignleft {
+    display: inline;
+    
+    float: left;
+    
+    margin-right: 1.5em;
+}
+
+.alignright, img.alignright {
+    display: inline;
+    
+    float: right;
+    
+    margin-left: 1.5em;
+}
+
+.aligncenter, img.aligncenter {
+    display: block;
+    
+    clear: both;
+    
+    margin-right: auto; margin-left: auto;
+}
+
+.wp-caption {
+    margin-bottom: 1.5em; padding-top: 5px;
+    
+    text-align: center;
+}
+
+.wp-caption img {
+    margin: 0; padding: 0;
+    border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+    margin: 0;
+    
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.wp-smiley {
+    margin: 0 !important;
+    max-height: 1em;
+}
+
+
+// Video post
+// -----------------
+
+.video-wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 25px; padding-bottom: 56.25%;
+
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+}

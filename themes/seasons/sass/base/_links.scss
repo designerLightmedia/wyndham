@@ -1,0 +1,21 @@
+$_links_color: $bw_2 !default;
+
+@mixin links {
+
+/* Links
+   ========================================================================== */
+
+a {
+    color: $_links_color;
+    text-decoration: none;
+    
+    &:hover {
+    	cursor: pointer;
+    }
+    
+    &:focus {
+        @include default-focus;
+    }
+}
+
+}

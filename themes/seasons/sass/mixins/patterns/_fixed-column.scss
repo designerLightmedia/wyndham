@@ -1,0 +1,30 @@
+@mixin l-fixed-column__main ($displaced-width: 0, $location: right) {
+    $float: opposite-position($location);
+    $prop: $location;
+
+    float: $float;
+    padding-#{$prop}: $displaced-width;
+}
+
+@mixin l-fixed-column__column ($displaced-width: 0, $location: right) {
+    $float: $location;
+    $prop: opposite-position($location);
+    
+
+    float: $float;
+    width: $displaced-width;
+    margin-#{$prop}: ($displaced-width * -1);
+}
+
+@mixin l-fixed-column ($component: column, $displaced-width: 0, $location: right) {
+
+    @if $component == main {
+
+        @include l-fixed-column__main ($displaced-width, $location);
+
+    } @elseif $component == column  {
+
+        @include l-fixed-column__column ($displaced-width, $location);
+    
+    }
+} 

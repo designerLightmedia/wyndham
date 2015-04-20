@@ -1,0 +1,33 @@
+@mixin default-focus() {
+    // Default
+    outline: thin dotted #333;
+    // Webkit
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+@mixin placeholder() {
+    &:-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+@mixin gradient-linear($_color, $_color-secondary) {
+    background-color: $_color; // Old browsers
+    @include filter-gradient($_color, $_color-secondary, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  $_color 0%,$_color-secondary 100%));
+}
+
+@mixin white-box-container() {
+    @include box-sizing(border-box);
+    border: 3px solid #fff;
+    @include box-shadow(#999 0 1px 2px);
+}
+
+

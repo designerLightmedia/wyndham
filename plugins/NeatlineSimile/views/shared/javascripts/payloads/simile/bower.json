@@ -1,0 +1,9 @@
+{
+  "name": "simile",
+  "version": "0.0.0",
+  "commit": "8fc1e9d8a658e1f5bed7176bd1063d1193d519f3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidmcclure/simile-production.git"
+  }
+}

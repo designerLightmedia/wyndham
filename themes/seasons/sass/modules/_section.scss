@@ -1,0 +1,69 @@
+$_title-text:                       $brown_1;
+$_title-text-secondary:             #c7c7c7;
+$_title-bg:                         $bw_6;
+
+$_section-border:                   #d6d6d6;
+$_section-border-shadow:            #000;
+
+$_line-border:                      #ccc;
+
+$_title-border:             #eee;
+
+$_border:                  #d6d6d6;
+$_shadow:                  #fff;
+
+
+////////////////////////////////////////////////////////////////////////////////
+/* =============================== Section styles ========== */
+
+.section {
+    @include pie-clearfix;
+}
+
+.section__content {
+    position: relative;
+}
+
+.section__title {
+    padding: 2em 0 1em;
+    color: $_title-text;
+    font-weight: bold;   
+    color: $_title-text; 
+
+    span {
+        font-weight: normal;        
+    }
+}
+
+.section--brown {
+    background: rgba(#bbb19b, .25);
+
+    margin-top: -11px;
+    margin-bottom: 2em;
+    padding: 3em 0 1.4em 0;
+    border-bottom: 1px solid rgba(194, 153, 99, 0.28);
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+    }
+
+    .title-desc {
+        p {
+            margin: 0;
+        }
+    }
+    
+
+    &.second {
+        padding: 2.8em 0 1.4em 0;
+    }
+
+}
+
+.section--type-featured {
+    @include box-shadow(rgba($_section-border-shadow, 0.3) 1px 1px 2px);
+    background: rgba($brown_5, 0.25);
+}
+.section--about {
+    margin-top: 5em;
+}

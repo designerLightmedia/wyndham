@@ -1,0 +1,38 @@
+@mixin l-spread-2-columns {
+    
+    @include span-columns(6,12);
+
+    &:nth-child(2n) {
+        @include omega;
+    }
+}
+
+@mixin l-disable-2-columns {
+
+    &:nth-child(2n) {
+        @include reset-columns;
+    }
+
+    @include reset-columns;
+}
+
+
+
+@mixin l-spread-3-columns {
+    
+    @include span-columns(4,12);
+
+    &:nth-child(3n) {
+        @include omega;
+    }
+}
+
+@mixin l-disable-3-columns {
+
+    &:nth-child(3n) {
+        @include reset-columns;
+    }
+
+    @include reset-columns;
+}
+

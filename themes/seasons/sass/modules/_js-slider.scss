@@ -1,0 +1,17 @@
+
+.direction {
+	position: relative;
+}
+
+.btn-next, .btn-prev {
+	position: absolute;
+	top: 50%;
+}
+
+.btn-next {
+	left: 0;
+}
+
+.btn-next {
+	right: 0;
+}

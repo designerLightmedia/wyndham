@@ -1,0 +1,18 @@
+@mixin t-footer {
+
+/* Template - Footer
+   ========================================================================== */
+
+.t-footer {
+	margin-top: 6em;
+    background: rgba(155, 132, 118, 0.71);
+    clear: both;
+    padding: 0 1.2em 1.2em;
+    @include pie-clearfix;
+}
+.t-footer-right {
+	@include box-sizing(border-box);
+	padding-left: 3.5em;	
+}
+
+}

@@ -1,0 +1,80 @@
+@mixin default-focus() {
+    // Default
+    outline: thin dotted #333;
+    // Webkit
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+
+@mixin placeholder() {
+
+    &:-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+
+@mixin segment-radius ($child: false) {
+
+    $selector: '';
+
+    @if $child == true {
+        $selector: '> *';
+    } @else if type-of($child) != bool {
+        $selector: $child;
+    }
+
+    &:not(:first-child):not(:last-child) #{$selector} {
+        border-radius: 0;
+    }
+
+    &:first-child #{$selector} {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &:last-child #{$selector} {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+/**
+ * Micro clearfix
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ * 
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of the
+ *    element.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+@mixin cf {
+
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    @if $legacy-support-for-ie {
+        & {
+            *zoom: 1;
+        }
+    }
+
+}
+

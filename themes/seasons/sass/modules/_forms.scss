@@ -1,0 +1,11 @@
+.field {
+	@include pie-clearfix;
+	margin-bottom: 1em;
+	
+	label {
+		width: 110px;
+		float: left;
+	}
+
+
+}

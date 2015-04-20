@@ -1,0 +1,24 @@
+@mixin l-wrap {
+
+
+/* Layout - Wrap
+   ========================================================================== */
+
+.l-wrap {
+    position: relative;
+    @include box-sizing(border-box);
+
+    // includes margin: 0 auto, padding and clearfix :/
+    @include container;
+
+    @include respond(50em) {
+
+    }
+    
+}
+
+.l-wrap--inner {
+    max-width: 920px;
+}
+
+}

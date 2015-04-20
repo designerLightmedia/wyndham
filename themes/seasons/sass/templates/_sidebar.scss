@@ -1,0 +1,26 @@
+@mixin t-sidebar {
+    
+/* Template - Sidebar
+   ========================================================================== */
+
+.t-sidebar {
+    float: left;
+    @include span-columns(4, 12);
+
+}
+
+.t-sidebar-secondary {
+    clear: both;
+
+    @include respond(35em) {
+        & > * {
+            @include l-spread-2-columns;
+        }
+    }
+}
+
+
+}
+
+
+

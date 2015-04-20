@@ -1,0 +1,44 @@
+// These are here only for reference, you should find the breakpoints based on your content
+// Will be removed eventually
+
+$mq-mobile-portrait     : 320 !default;
+$mq-mobile-landscape    : 480 !default;
+$mq-tablet-portrait     : 768 !default;
+$mq-tablet-landscape    : 1024 !default;
+
+
+@mixin respond($min: false, $max: false, $ignoreIE: false) {
+
+    @if (not $min) and (not $max) {
+        @warn "Either $min or $max must be specified.";
+    }
+
+    @if $min and $max {
+
+        // Both $min and $max
+        @media (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+
+    } @else {
+        @if $min {
+            // Min only:
+            @media (min-width: $min) {
+                @content;
+            }
+        } @else {
+            // Max only:
+            @media (max-width: $max) {
+                @content;
+            }
+        }
+    }
+}
+
+
+// Retina screens have a 1.5 pixel ratio, not 2
+@mixin retina {
+    @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+        @content;
+    }
+}

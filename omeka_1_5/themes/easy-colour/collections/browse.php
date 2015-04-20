@@ -1,0 +1,47 @@
+<?php head(array('title'=>'Browse Collections','bodyid'=>'collections','bodyclass' => 'browse')); ?>
+<div id="primary-items">
+	
+	<h1>Collections</h1>
+	<div class="pagination"><?php echo pagination_links(); ?></div>
+	
+		
+		<?php while (loop_collections()): ?>
+			<div class="collection">
+				
+				<h2><?php echo collection('ID') . ') '; echo link_to_collection(); ?></h2>
+				<div class="indent-large">
+					<div class="element">
+						<h3>Entries</h3>
+						<div class="element-text">
+							<?php echo ('This collection contains ') . total_items_in_collection() . ' items'; ?>
+						</div>
+					</div>
+					
+					<div class="element">
+						<h3>Collector(s)</h3> 
+						<?php if(collection_has_collectors()): ?>
+							<div class="element-text">
+								<p><?php echo collection('Collectors', array('delimiter'=>', ')); ?></p>
+							</div>
+						<?php endif; ?>
+					</div>
+	
+					<div class="element">
+						<h3>Description</h3>
+						<div class="element-text">
+							<?php echo nls2p(collection('Description', array('snippet'=>350))); ?>
+						</div>
+					</div>
+	
+					<!--<p class="view-items-link"><?php //echo link_to_browse_items('View the items in ' . collection('Name'), array('collection' => collection('id'))); ?></p> -->
+	
+					<?php echo plugin_append_to_collections_browse_each(); ?>
+	
+				</div><!-- end class="collection" -->
+			<?php endwhile; ?>
+			
+			<?php echo plugin_append_to_collections_browse(); ?>
+		</div><!-- end indent-large -->
+</div><!-- end primary-items -->
+			
+<?php foot(); ?>	

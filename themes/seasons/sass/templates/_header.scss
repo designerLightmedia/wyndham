@@ -1,0 +1,15 @@
+@mixin t-header {
+
+/* Template - Header
+   ========================================================================== */
+
+
+.t-header {
+	padding: 0 2em 0;
+	min-height: 210px;
+	background: image-url('bg-top.png') 0 top repeat-x;
+    @include pie-clearfix; 
+}
+
+
+}

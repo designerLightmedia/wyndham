@@ -1,0 +1,97 @@
+Read me for Omeka theme: easy-colour by Adam Crymble (http://crymble.ca)
+
+This theme was designed with an image collection in mind. Collections that are primarily text or audio based may find the "browse collection" page not to their liking.
+
+1) Changing the Colour Scheme
+2) Easiest Way to Select a Colour Scheme
+3) Changing the Splash Page Images
+4) Moving the Words on the Splash Page
+5) Theme Requirements
+
+**************************
+
+1) Changing the Colour Scheme
+
+This theme was designed so that users can easily change the colour scheme, even for those without much design experience.  All background colours and font colours are controlled in the colour.css file, located in the directory --> easy-colour/css/colour.css
+
+To change the colour scheme, open this file in a text editor, remove the /* and */ and then after each # sign, add the HTML colour code for the new colours.
+
+For example,
+
+If you want to change the font colour from white to black you would replace body{color: #;} with:
+
+body {color: #000;}
+
+Save the file to your website in the same location as you found it and the changes are made.  The other values correspond to the various coloured swatches in the header, footer and the sides of the website.
+
+**************************
+
+2) Easiest Way to Select a Colour Scheme
+
+If you are not a designer and are looking for an easy way to change the scheme but also ensure that it looks good, I recommend a website called Color Scheme Designer 3â (http://colorschemedesigner.com/).
+
+You can use the colour wheel to select a colour set that looks good, make adjustments to the brightness,  saturation, and contrast, then click Color List to get the HTML colour codes for your pattern.  You can then cut and paste those values into the colour.css file and upload it to your website.
+
+If you have a photo or logo that you wish to match in your colour scheme, you can upload your photo somewhere on the web (Flickr?) and post the URL to the Color Palatte Generator (http://www.degraeve.com/color-palette/?src=rss).
+
+**************************
+
+3) Changing the Splash Page Images
+
+The splash page contains 5 images from Canadian History.  This theme has been designed so that changing the splash page is easy.  All you need is an image editing program such as the GIMP (free and open source http://www.gimp.org/) or PhotoShop (expensive).  First, find the splash page image, located in the directory --> easy-colour/images/splash.jpg and open it using your image editing program.
+
+You can then cut and paste the new images over the old ones, taking care to retain white-space, save the finished image and upload it back to your website in the same location.  Now, when you visit the front page of your site you should see your own images.
+
+4) Moving the Words on the Splash Page
+
+If you have changed the images which make up the splash page, chances are some of the words overlayed on the images are no longer in the ideal location.  To change the location of the text, open the screen.css file located at --> easy-colour/css/screen.css .
+
+You will have to find and alter the code for the following CSS classes (lines of code beginning with:)
+
+.button1 a
+.button2 a
+.button3 a
+.button4 a
+.button5 a
+ 
+This can seem a bit tricky if you do not understand CSS, but you should be able to manage. Here is an explanation using the top left button defaults (.button1 a) as an example:
+
+.button1 {display: block; width: 300px; float: left;}
+                .button1 a {min-height: 42px; margin: 3px 0 0 3px; padding: 150px 0 0 170px;}
+
+Since the images are all part of the background splash.jpg file, nothing you change here will alter how the image looks. What will change is the size and position of the link when you hover over it with your mouse, as well as the position of the text within that link. Notice when you hover over the top left image, a black border appears around it.  Follow these directions carefully so that the black border continues to appear where it is supposed to.
+
+The button (black border) is set to 300 px wide by the first line of code. The second line of code defines how tall the button is and where the text will appear within it.  The numbers that affect the location of the text are the padding numbers.  The other numbers determine where the button appears on the splash page and probably shouldn't be altered (except as described below).
+
+Padding includes 4 values and these values correspond to top, right, bottomâ and left in a clockwise fashion.  Since text always tries to go to the top left corner of a space, we use padding to force it down and right.  That is why we pad or add blank space for the text by adding values to the top and left.
+
+To move text further to the right, you would increase the last value, like this:
+
+	.button1 a {min-height: 42px; margin: 3px 0 0 3px; padding: 150px 0 0 190px;}
+	
+To move the text further to the left, you would decrease the last value, like this:
+
+	.button1 a {min-height: 42px; margin: 3px 0 0 3px; padding: 150px 0 0 60px;}
+
+To move the text along the vertical axis you have to do one more step.  Instead of adjusting the last value, you would adjust the first padding value, which corresponds to the top.  However, to make sure the size of the button does not change, you must also increase or decrease the min-height value so that the SUM of the two values stays the same.  For example, if you wanted to raise the text by 50 pixels, you would subtract 50 from padding-top and increase min-height by 50, like this:
+
+	.button1 a {min-height: 92px; margin: 3px 0 0 3px; padding: 100px 0 0 170px;}
+
+The padding values should not be larger than the size of the button.  If a button is 300px wide and 200px tall, you shouldn't try to change padding-top to 400. 
+
+Buttons are numbered from left to right.  Button 1 is in the top left corner, and button 4 is the centre image.  Button sizes are as follows:
+
+Button1 (300x200px)
+Button2 (600x300px)
+Button3 (200x600px
+Button4 (300x200px)
+Button5 (300x200px)
+
+
+5) Theme Requirements
+
+For this theme to function properly, you will need to have Simple Pages and Exhibit Builder enabled.  These plugins come preinstalled with Omeka 1.1 but must be manually turned on.  To do this, go to the admin menu --> Manage Plugins and install both.  Otherwise, the Browse Exhibits and Learn More links on the front page will not go anywhere. If you are not using Exhibit Browser, you can change the link to another page on your site by altering the link location in the "index.php" file.  The same goes for all other links on the splash page.
+
+You will also have to create a new Simple Page for the Contact link on the main page. Do this after Simple Pages has been enabled.  Then, visit the admin menu and select Simple Pages from along the top menu bar, then click Add a Page.  You can then create a page with whatever contact information you wish.  Make sure you click the Publish this page check box and use the Slug contact (minus quotes) to make sure the link on the front page works properly. 
+
+

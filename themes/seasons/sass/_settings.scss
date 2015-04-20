@@ -1,0 +1,105 @@
+// Cross-browser support http://compass-style.org/reference/compass/support/
+// =============================================================================
+
+// Drop IE6 but leave IE7 for now
+$legacy-support-for-ie:     false;
+$legacy-support-for-ie6:    $legacy-support-for-ie;
+$legacy-support-for-ie7:    true;
+
+
+
+// Set up Susy
+// =============================================================================
+
+// This is actually a global variable from the Compass Vertical Rhythm module.
+// http://compass-style.org/reference/compass/typography/vertical_rhythm/
+// Susy requires it for the calculations (for now)
+$base-font-size:            13;
+$base-line-height:          $base-font-size * 1.6;
+
+// The total number of columns in the grid
+$total-columns:             12;       
+
+// The width of columns and gutters.
+// These must all be set with the comparable units.
+$column-width:              4em;      
+$gutter-width:              2em;      
+
+// Padding on the left and right of a Grid Container.
+$grid-padding:              0px;
+
+// Override the total width of your grid with an arbitrary length.
+$container-width:           1000px;   
+
+
+
+// Pallete
+// =============================================================================
+
+$brown_1:		  #645f5c;
+$brown_2:		  #c29963;
+$brown_3:		  #c17d35;
+$brown_4:		  #896d48;
+$brown_5:		  #bbb19b;
+$brown_6:		  #b9a599;
+
+$azure-mist_light:    #ecf2f2;      
+$azure-mist:          #eaf2f5;
+$azure-mist_dark:     #dae4e6;
+$green:               #7abcb0;
+$cyan:				  #8bb3bf;
+$cyan-dark:           #7aa2aa;
+
+
+$blue-dull:		  #eaf2f4;
+$aqua: 			  #111; //
+$blue:            #049cdb;
+$orange:          #e0583c;
+
+$teal-dark:       #76838b;
+$blue:            #3488c0;
+$teal:            #dae3e5;
+
+// Grays (slightly tinted)
+// -----------------------------------------------------------------------------
+// bw(i) = bw(i-1) - 10% B + 2% S
+
+
+$bw_3d5:		#cfcfcf;
+$bw_10:          #cfcfcf;
+$bw_9d5: 		#cfcfcf;
+$bw_9:          #cfcfcf;
+$bw_8:          #cfcfcf;
+$bw_7:          #cfcfcf;
+$bw_6:          #cfcfcf; // almost white
+$bw_5:          #6b7178;
+$bw_4:          #aab3b8;
+$bw_3:          #888888;
+$bw_2:          #777777;
+$bw_1:          #232323; // almost black
+
+
+// TODO: move these to the relevant sections
+// -----------------------------------------------------------------------------
+
+$_error-text:       #b94a48;
+$_error-border:     #ee5f5b;
+
+$_warning-text:     #c09853;
+$_warning-border:   #c09853;
+
+$_success-text:     #468847;
+$_success-border:   #468847;
+ 
+
+
+// z-index reference
+// =============================================================================
+
+$_bio:			 999;
+$z_flyout:      1000;
+$z_popover:     1010;
+$z_tooltip:     1020;
+$z_menu:        1030;
+$z_modalBack:   1040;
+$z_modal:       1050;

@@ -1,0 +1,46 @@
+// @font-face declarations should go here if ever needed
+// =============================================================================
+
+
+// font-family helpers
+// =============================================================================
+
+@mixin sans-serif($prepend: false) {
+    $list: 'Helvetica Neue', Arial, sans-serif;
+    @if $prepend {
+        $list: join($prepend,$list,comma);
+    }
+    font-family: $list;
+}
+@mixin serif($prepend: false) {
+    $list: Georgia, 'Times New Roman', Times, sans-serif;
+    @if $prepend {
+        $list: join($prepend,$list,comma);
+    }
+    font-family: $list;
+
+}
+
+@mixin monospace($prepend: false) {
+    $list: Monaco, 'Courier New', monospace;
+    @if $prepend {
+        $list: join($prepend,$list,comma);
+    }
+    font-family: $list;
+}
+
+// font-size helpers
+// =============================================================================
+
+@function rem($value: 16, $context: 16) {
+    @return #{$value / $context}rem
+}
+
+@function em($value: 16, $context: 16) {
+    @return #{$value / $context}em
+}
+
+@mixin font-size($value: 16, $context: 16) {
+    font-size: #{$value}px;
+    font-size: rem($value);
+}

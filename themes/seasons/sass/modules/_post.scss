@@ -1,0 +1,92 @@
+@mixin post {
+
+$_post-title-text:           $bw_6;
+$_post-link-text:            $bw_6;
+$_post-sub-text:             #a7a7a7;
+$_post-border:               #d6d6d6;
+$_post-border-shadow:        #fff;
+$_post-read-bg:                   $cyan;
+
+////////////////////////////////////////////////////////////////////////////////
+/* =============================== Media styles ========== */
+
+.post {
+}
+
+.post__read {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 30px 7px;
+    background: $_post-read-bg;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.post--listing {
+    float: left;
+    width: 100%;
+    padding: 3.5% 0 5%;
+    @include pie-clearfix;
+    border-bottom: 1px solid $_post-border;
+    @include box-shadow($_post-border-shadow 0 1px 0);
+    
+    p {
+        margin: 0 0 0.5rem 0; 
+        a {
+            color: $_post-link-text;
+        }
+    }
+
+    .post__title {
+        margin-bottom: 4px;;
+        font-weight: normal;
+        
+        a {
+            color: $_post-title-text;
+        }
+    }
+
+    .formatted {
+        margin-top: 10px;
+    }
+    
+    .post__img {
+        @include white-box-container();
+
+        @include respond (28.571em) {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+    }
+
+    &:first-child {
+        padding-top: 10px;
+    }
+
+    @include respond (46.154em) {
+        padding: 26px 0;
+    }
+}
+
+
+
+
+
+.post--spread {
+    float: left;
+    margin: 0 0 14px;
+    padding: 0 0 14px;
+    
+    .post__img {
+        float: left;
+        width: 270px;
+        height: 270px;  
+        margin-right: 50px;
+        @include border-radius(50%);
+        border: 8px solid rgba(#000, 0.1);
+    }
+}
+
+}

@@ -1,0 +1,58 @@
+#sort-links {
+	float: right;
+	width: 150px;
+	position: relative;
+	
+	.sort-label {
+		float: left;
+		display: block;
+	}
+	
+	#sort-links-list {
+		float: left;
+		margin: -1px 0 0;
+		padding: 0;
+		width: 100px;		
+		left: 4em;
+		position: absolute;
+		@include border-radius(3px);
+		overflow: hidden;
+		@include box-shadow(rgba(17, 17, 17, 0.44) 0 1px 3px);
+		z-index: 9999;
+		
+		li {
+			display: none;
+			
+			a {
+				display: block;
+				padding: 5px 5px 4px;
+				line-height: 1;
+			}
+
+			&.sorting {
+				display: block;
+				background: #fff;
+			}
+		}
+
+		&.clicked {
+			li {
+				display: block;
+			}	
+
+			background: #fff;	
+			
+			a {
+				&:hover {
+					color: #111;
+				}
+			}
+			
+			.sorting a {				
+				background: #E4E4E4;
+			}
+		}
+	}
+
+
+}

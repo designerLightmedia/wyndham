@@ -1,0 +1,44 @@
+@mixin l-form-fields {
+
+.l-fields-horizontal {
+
+    @include respond(35em) {
+
+        .field__label {
+            float: left;
+            width: 160px;
+            text-align: right;
+            padding-top: em(4);
+        }
+
+        .field__controls {
+            margin-left: 180px;
+        }
+
+        .control-radio:first-child,
+        .control--inline {
+            padding-top: em(4);
+        }
+
+    }
+}
+
+.l-fields-3-columns {
+    
+    .field {
+        @include respond(42em) {
+
+            @include span-columns(3,9);
+
+            &:nth-of-type(3n) {
+                @include omega;
+            }
+        }
+    }
+
+}
+
+.l-fields-spread {
+}
+
+}

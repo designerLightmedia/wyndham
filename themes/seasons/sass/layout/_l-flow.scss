@@ -1,0 +1,18 @@
+.l-flow-flipped {
+	.t-content {
+	    float: left;
+	    @include box-sizing(border-box);
+	    //max-width: 100%; // without this images will break the parent max-width 100% in FF 15
+	    width: 100%;
+	    padding-right: 370px;
+	}
+
+	.t-sidebar {
+	    float: right;
+		width: 330px;
+		margin-left: -330px;
+		margin-right: 0;
+
+	}
+
+}

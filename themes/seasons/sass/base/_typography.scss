@@ -1,0 +1,81 @@
+$_body_color:       #888888 !default;
+$_heading_color:    #645f5c !default;
+
+@mixin typography {
+
+/* Typography
+   ========================================================================== */    
+
+body {
+    @include font-size($base-font-size);
+    line-height: 1.7;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+    color: $_body_color;
+    @include serif('Arvo');
+}
+
+.branding {
+    color: $_heading_color;
+    font-weight: 600;
+    @include serif('Arvo');
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: $_heading_color;
+}
+
+
+h1, .t1 {
+    @include font-size(35);
+    line-height: 1.15;
+}
+
+h2, .t2 {
+    @include font-size(30);
+    line-height: 1.2;
+}
+
+h3, .t3 {
+    @include font-size(25);
+    line-height: 1.3;
+}
+
+h4, .t4 {
+    @include font-size(22);
+    line-height: 1.3;
+}
+
+h5, .t5 {
+    @include font-size(18);
+    line-height: 1.3;
+}
+
+h6, .t6 {
+    @include font-size(15);
+    line-height: 1.3;
+}
+
+.t-huge {    
+    @include font-size(50);
+    line-height: 1;
+    
+    @include respond(30em) {
+      @include font-size(60);
+    }
+}
+
+code,
+kbd,
+pre,
+samp {
+    @include monospace;
+    font-size: inherit;
+}
+
+}

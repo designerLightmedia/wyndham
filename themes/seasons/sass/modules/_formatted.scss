@@ -1,0 +1,74 @@
+@mixin formatted {
+
+/* Formatted text. Apply on containers such as an article or a comment body
+============================================================================= */
+
+.formatted {
+    p {
+        margin: 0 0 1.5rem 0;
+        @include font-size(14);
+    }
+
+    h2, h3, h4 {
+        margin: 2rem 0 1rem 0;
+    }
+
+    h5, h6 {
+        margin: 1rem 0 1rem 0;
+        //text-transform: uppercase;
+        //font-weight: normal;
+    }
+
+    ul {
+        @extend .list-circle;
+    }
+
+    ul li, ol li {
+    }
+    
+    ol {
+        list-style-type: decimal;
+        
+        li {
+            padding: 2px 0;
+        }
+    }
+
+    ul, ol, dl { 
+        margin: 0 0 22px 30px;
+        @include font-size(15);
+    }
+
+    ul, ol {
+
+        list-style-position: inside;
+
+        ul, ol { 
+            margin-top: 0; 
+            margin-bottom: 0; 
+        }
+    }
+
+    ol ol li {
+        list-style-type: lower-latin;
+    }
+
+    img {
+        display: block;
+    }
+
+
+    pre { 
+        margin-left: 12px;
+        font-size: 12px; 
+    }     
+}
+
+.formatted--lite {
+    p {
+        margin: 0 0 1rem 0;
+        @include font-size(14);
+    }
+}
+
+}

@@ -1,0 +1,14 @@
+Custom background
+-----------------
+
+This theme was meant to have a custom background, so please change it out to something related to your content ... unless you're really in love with Kill Devil Hills, NC.
+
+The default image size is 1024x768, which is the recommended minimum size. You can upload your own image via the Omeka admin interface by going to Settings -> Theme -> Griddy and clicking 'Configure', where you'll see a file upload. To remove the custom background and return to the default, save changes without uploading a file.
+
+If you would like to do without the full screen background altogether, delete or edit the following lines in the body properties in 'griddy/css/screen.css':
+
+	background: url(../images/bg.jpg) no-repeat center center fixed;
+	background-size: cover;	
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;

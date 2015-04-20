@@ -1,0 +1,139 @@
+$_feature-links-bg:			$brown_3;
+
+#f-links {
+	float: left;
+	right: 0;
+	position: relative;
+	width: 100%;
+	min-height: 486px;
+	padding-left: 1em;
+	margin-top: 1em;
+	margin-bottom: -2em;
+}
+
+.c-links {
+	float: left;
+	position: absolute;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	@include transition-duration(.5s);
+	display: table;
+	overflow: hidden;
+
+	&.active, &:hover {
+	  width: 300px !important;
+	  height: 300px !important;
+	  z-index: 11;
+
+	  a {
+	  	background: rgba(193, 125, 53, 0.4);
+	  }
+	}
+
+	 a {
+	  display: table-cell;
+	  vertical-align: middle;
+	  width: 100%;
+	  margin: 0 auto;
+	  text-align: center;
+	  @include border-radius(100%);
+	  border: 5px solid rgba(0, 0, 0, 0.02);
+	  background: rgba(193, 125, 53, 0.15);
+	  @include text-shadow(rgba(#fff, .4) 0 1px 0);
+	}
+}
+
+.c-links--1 {
+  top: 7em;
+  left: 5em;
+  width: 180px;
+  height: 180px;
+}
+
+.c-links--2 {
+  top: 1em;
+  left: 23em;
+  width: 190px;
+  height: 190px;
+}
+
+.c-links--3 {
+  top: 8em;
+  left: 33em;
+  width: 230px;
+  height: 230px;
+}
+.c-links--4 {
+  top: 23em;
+  left: 31em;
+  width: 160px;
+  height: 160px;
+}
+
+.two-hover {
+	.c-links--1 {
+	  top: 9em;
+	  left: 5em;
+	}
+
+	.c-links--2 {
+	  top: 1em;
+	  left: 17em;
+	}
+
+	.c-links--3 {
+	  top: 16em;
+	  left: 33em;
+	}
+
+	.c-links--4 {
+	  top: 28em;
+	  left: 26em;
+	}
+
+
+}
+
+.three-hover {
+	.c-links--1 {
+	  top: 7em;
+	  left: 5em;
+	}
+	.c-links--2 {
+	  top: 1em;
+	  left: 16em;
+	}
+	.c-links--3 {
+	  top: 8em;
+	  left: 25em;
+	}
+	.c-links--4 {
+	  top: 23em;
+	  left: 17em;
+	}
+
+}
+.four-hover {
+.c-links--1 {
+  top: 7em;
+  left: 5em;
+}
+
+.c-links--2 {
+  top: 1em;
+  left: 16em;
+}
+
+.c-links--3 {
+  top: 5em;
+  left: 29em;
+  width: 175px; 
+  height: 175px;
+}
+
+.c-links--4 {
+  top: 16em;
+  left: 22em;
+}
+}
