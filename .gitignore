@@ -4,3 +4,5 @@ omeaka_1_5
 *.zip
 
 *.xml
+
+.idea/workspace.xml

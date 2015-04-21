@@ -4986,7 +4986,7 @@ div#comments-container::after {
 }
 
 .image-library-footer{
-    margin-bottom: 20px;
-    margin-top: 4px;
-    font-size: 14px;
+    font-size: 13px;
+    background: rgba(194, 153, 99, 0.52);
+    padding: 8px;
 }
