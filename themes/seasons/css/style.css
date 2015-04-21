@@ -5027,26 +5027,29 @@ div#comments-container::after {
 }
 
 #leftbutton , #rightbutton {
-      top: 45%;
-      position: absolute;
-      height: auto;
-      background-repeat: no-repeat;
-      width: auto;
-      bottom: 0;
+          top: 0;
+          position: absolute;
+          height: auto;
+          background-repeat: no-repeat;
+          width: auto;
+          background-position: center;
+          background-color: #fff;
+          bottom: 0;
+          z-index: 1;
+          opacity: 0.8;
 }
-
-#leftbutton:hover , #rightbutton:hover {
-    background-color: transparent;
-} 
 
 #leftbutton {
-      left: 5px;
       background-image: url('images/arrow-left.jpg');
+      opacity: 1;
 }
+
 #rightbutton {
      right: 0px;
      background-image: url('images/arrow-right.jpg');
+     opacity: 1;
 }
+
 
 .clusterlabel {
   background-color: rgba(0, 0, 0, 0.7);
@@ -5063,9 +5066,5 @@ div#comments-container::after {
 
 .image-library-body {
   padding: 6px 6px 10px 6px;
-  min-height: 0;
-}
-
-.image-library-nav a {
-
+  min-height: 100px;
 }
