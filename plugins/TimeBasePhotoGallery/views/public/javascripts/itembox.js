@@ -24,8 +24,8 @@ function addItemBox($clicked, clusters){
   // build the item box
   var itembox = $('<div id="itembox" data-term="'+ $clicked.attr("data-term") + '" data-idx="0" />');
   $(itembox).append('<ul id="pics"> </ul>');
-  var prevbutton = $('<div class="button" id="leftbutton"> </div>').text(' <').on("click", function() { itemBoxPrev(clusters); });
-  var nextbutton = $('<div class="button" id="rightbutton"> </div>').text(' >').on("click", function() { itemBoxNext(clusters); });
+  var prevbutton = $('<div class="button" id="leftbutton"> </div>').text(' ').on("click", function() { itemBoxPrev(clusters); });
+  var nextbutton = $('<div class="button" id="rightbutton"> </div>').text(' ').on("click", function() { itemBoxNext(clusters); });
   $(itembox).append(prevbutton).append(nextbutton);
   $(itembox).hide();
   // append it to the display

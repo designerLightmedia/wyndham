@@ -4990,3 +4990,82 @@ div#comments-container::after {
     background: rgba(194, 153, 99, 0.52);
     padding: 8px;
 }
+
+/*Edits*/
+.itemli span {
+    display: none;
+}
+
+.datelinks {
+    display: none;
+}
+
+#itembox {
+      height: 170px;
+      background: #fff;
+      padding: 40px 0;
+      margin: 5px 0 5px -6px;
+      border: transparent;
+      width: 101.2%;
+}
+
+.itemli {
+  height: 150px;
+  margin: 1px 0 0 8px;
+  border: 3px solid #ded6c9;
+  background-size: cover;
+}
+
+.itemli:hover {
+  border: 3px solid #46a3cf;
+  cursor: pointer;
+}
+
+#pics {
+ width: 950px;
+  margin: 5px 0px 0px 22px;
+}
+
+#leftbutton , #rightbutton {
+      top: 45%;
+      position: absolute;
+      height: auto;
+      background-repeat: no-repeat;
+      width: auto;
+      bottom: 0;
+}
+
+#leftbutton:hover , #rightbutton:hover {
+    background-color: transparent;
+} 
+
+#leftbutton {
+      left: 5px;
+      background-image: url('images/arrow-left.jpg');
+}
+#rightbutton {
+     right: 0px;
+     background-image: url('images/arrow-right.jpg');
+}
+
+.clusterlabel {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.clusterdiv {
+  margin: 2px 0 0 0;
+  background-color: #000;
+}
+
+.image-library-footer {
+  display: none;
+}
+
+.image-library-body {
+  padding: 6px 6px 10px 6px;
+  min-height: 0;
+}
+
+.image-library-nav a {
+
+}
