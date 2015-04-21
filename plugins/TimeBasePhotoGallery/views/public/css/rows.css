@@ -196,17 +196,14 @@ div .unfocused{
 }
 
 .clusterlabel{
-    background-color:rgba(0, 0, 0, 0.48);
-    color:#fff;
-    text-shadow: #000 1px 1px 2px;
-    font-size: 13px;
-    display:block;
-    clear:both;
-    padding:1px 1px 1px 2px;
-    position:relative;
-    z-index:1;
-    text-align:middle;
-    /* margin:1px;*/
+    background-color: rgba(0, 0, 0, 0.48);
+    color: #fff;
+    font-size: 13px!important;
+    display: block;
+    clear: both;
+    padding: 1px 8px;
+    position: relative;
+    z-index: 1;
 }
 
 .clustercount {
@@ -238,19 +235,19 @@ div .unfocused{
 }
 
 .clustercaption{
-    position:absolute;
-    bottom:0;
-    width:100%;
-    background:#000;
-    color:#fff;
-    font-size:11px;
-    line-height: 12px;
-    padding:2px;
-    clear:both;
-    opacity:0;
-    z-index:99;
-    -webkit-transition: all 0.5s ;
-    -moz-transition: all 0.5s ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-size: 11px;
+    padding: 6px;
+    line-height: 1.2;
+    clear: both;
+    opacity: 0;
+    z-index: 99;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
 }
 
 .showcaption{
