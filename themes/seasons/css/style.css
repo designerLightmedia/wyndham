@@ -5068,3 +5068,52 @@ div#comments-container::after {
   padding: 6px 6px 10px 6px;
   min-height: 100px;
 }
+
+@media (max-width: 1024px) {
+    .clusterdiv {
+        width: 24.4% !important;
+    }
+
+    .clusterimg {
+        position: inherit;
+        width: 100%;
+        height: 100%;
+    }
+
+    #pics {
+      width: 98%;
+      margin-left: 20px;
+    }
+
+    .itemli {
+        width: 29%;
+        height: 170px;
+        margin-bottom: 15px;
+    }
+
+    #itembox {
+        height: 390px;
+        width: 100%;
+    }
+
+    .image-library-body {
+      width: 100%;
+    }
+
+    .image-library {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 736px) {
+    .clusterdiv {
+        width: 49% !important;
+        height: 200px !important;
+    }
+
+    .itemli {
+        width: 40%;
+    }
+}
+
